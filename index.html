@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Product preview card component</title>
+</head>
+<body class="bg-Cream flex h-screen flex-col justify-center items-center">
+  <section class="w-5/6 mx-auto mt-10 grid space-y-4 bg-White rounded-lg md:grid-cols-2 md:w-1/2">
+    <img src="images/image-product-desktop.jpg" class="hidden w-full h-80 mx-auto rounded-t-lg md:block md:h-full md:rounded-l-lg rounded-t-none" alt="">
+    <img src="images/image-product-mobile.jpg" class="w-full h-80 mx-auto rounded-t-lg md:hidden" alt="">
+    <div class="grid space-y-6 w-5/6 mx-auto">
+      <span class="text-sm text-Grey tracking-[.3em] font-montserrat font-[2em]">PERFUME</span>
+      <h1 class="text-3xl w-full font-fraunces font-extrabold">
+        Gabrielle Essence Eau De Parfum
+      </h1>
+
+      <p class="text-Grey">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+        Perfumer-Creator for the House of CHANEL.
+      </p>
+
+      <div class="grid gap-2">
+        <div class="flex items-center gap-4">
+          <h2 class="text-3xl font-bold font-fraunces text-Green700">$149.99</h2>
+          <span class="line-through font-medium text-md text-Grey">$169.99</span>
+        </div>
+        <button class="bg-Green500 rounded-lg mb-5 p-4 flex items-center justify-center gap-2 font-bold text-White hover:bg-Green700">
+          <img src="images/icon-cart.svg" class="w-[1rem] h-[1rem]" alt="">Add to Cart
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/adeshinayomi">Adeshina</a>.
+  </div>
+</body>
+</html>
